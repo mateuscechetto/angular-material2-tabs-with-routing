@@ -1,0 +1,14 @@
+<nav md-tab-nav-bar >
+  <a md-tab-link
+     *ngFor="let routeLink of arrayLinks; let i = index;"
+     [routerLink]="routeLink.link"
+     routerLinkActive="mat-tab-link-active"
+     #rla="routerLinkActive"
+     [active]="activeLinkIndex === i"
+     (click)="activeLinkIndex = i"
+     [routerLinkActiveOptions]="{exact: true}"
+  >
+      {{routeLink.label}}
+  </a>
+</nav>
+

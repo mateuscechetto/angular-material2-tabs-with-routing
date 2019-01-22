@@ -11,6 +11,7 @@ import { Product4Component } from './products/product-4/product-4.component';
 import { Product5Component } from './products/product-5/product-5.component';
 
 import {AppComponent} from './app.component';
+import { TabComponent } from './tab/tab.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import {AppComponent} from './app.component';
         Product3Component,
         Product4Component,
         Product5Component,
+        TabComponent,
     ],
     imports: [
         BrowserModule,
